@@ -1,1 +1,1 @@
-# MaiThiThaoVy - Bảo mật MQTT bằng Mosquitto và Paho Python
+# Mai Thị Thảo Vy - Bảo mật MQTT bằng Mosquitto và Paho Python
