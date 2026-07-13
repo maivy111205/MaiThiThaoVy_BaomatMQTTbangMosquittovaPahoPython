@@ -1,5 +1,0 @@
-user sensor
-topic write iot/sensor/temp
-
-user dashboard
-topic read iot/sensor/temp
