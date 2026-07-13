@@ -1,7 +1,5 @@
-# User 'sensor' chỉ được phép publish vào topic iot/sensor/temp
 user sensor
 topic write iot/sensor/temp
 
-# User 'dashboard' chỉ được phép subscribe topic iot/sensor/temp
 user dashboard
 topic read iot/sensor/temp
