@@ -1,1 +1,3 @@
+mosquitto_passwd -c configs/pwfile sensor
+mosquitto_passwd configs/pwfile dashboard
 
