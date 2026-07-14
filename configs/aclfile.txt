@@ -1,1 +1,4 @@
-
+user sensor
+topic write iot/sensor/#
+user dashboard
+topic read iot/sensor/#
