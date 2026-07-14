@@ -1,3 +1,4 @@
+import os
 import paho.mqtt.client as mqtt
 
 BROKER = "localhost"
@@ -24,6 +25,8 @@ def on_message(client, userdata, msg):
     print("Topic:", msg.topic)
     print("Payload:", message)
     print("==============================")
+
+    os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"{msg.topic} : {message}\n")
