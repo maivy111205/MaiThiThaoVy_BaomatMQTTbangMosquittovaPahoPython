@@ -1,1 +1,2 @@
-
+iot/sensor/temp : 30
+iot/sensor/temp : 30
