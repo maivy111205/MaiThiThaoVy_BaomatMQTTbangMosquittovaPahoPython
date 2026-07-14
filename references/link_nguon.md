@@ -14,8 +14,6 @@ Phần sử dụng:
 Ngày truy cập:
 14/07/2026
 
----
-
 ## 2. Eclipse Paho MQTT Python
 
 Link:
@@ -29,8 +27,6 @@ Phần sử dụng:
 Ngày truy cập:
 14/07/2026
 
----
-
 ## 3. MQTT.org
 
 https://mqtt.org/
@@ -38,16 +34,12 @@ https://mqtt.org/
 Ngày truy cập:
 14/07/2026
 
----
-
 ## 4. Mosquitto Documentation
 
 https://mosquitto.org/documentation/
 
 Ngày truy cập:
 14/07/2026
-
----
 
 ## 5. Python
 
