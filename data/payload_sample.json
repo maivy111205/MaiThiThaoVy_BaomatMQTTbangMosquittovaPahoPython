@@ -1,1 +1,6 @@
-
+{
+  "device": "sensor01",
+  "temperature": 30,
+  "humidity": 70,
+  "time": "2026-07-14 19:30:00"
+}
