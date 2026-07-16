@@ -52,22 +52,22 @@ Quyền truy cập:
 
 ## 4. Cấu trúc thư mục
 
-MaiThiThaoVy_BaomatMQTTbangMosquittovaPahoPython
- configs
-    mosquitto.conf
-      aclfile.txt
-      password.txt.example
- data
-      payload_sample.json
- results
-     logs
-     screenshots
- src
-     mqtt_pub.py
-     mqtt_sub.py
- references
-     link_nguon.md
- requirements.txt
+- MaiThiThaoVy_BaomatMQTTbangMosquittovaPahoPython
+  - configs
+      - mosquitto.conf
+      - aclfile.txt
+      - password.txt.example
+  - data
+      - payload_sample.json
+  - results
+     - logs
+     - screenshots
+  - src
+     - mqtt_pub.py
+     - mqtt_sub.py
+  - references
+     - link_nguon.md
+  - requirements.txt
 
 
 ## 5. Cài đặt môi trường
@@ -109,6 +109,7 @@ iot/sensor/temp
 ## 7. Kiểm thử bảo mật
 
 Trường hợp 1: Người dùng hợp lệ
+
 Điều kiện:
 Username/Password đúng.
 Có quyền truy cập Topic.
@@ -116,18 +117,23 @@ Kết quả mong đợi:
 Client kết nối thành công.
 Publisher gửi dữ liệu.
 Subscriber nhận dữ liệu.
+
 Trường hợp 2: Sai Username/Password
+
 Điều kiện:
 Sử dụng tài khoản không tồn tại hoặc sai mật khẩu.
 Kết quả mong đợi:
 Mosquitto Broker từ chối kết nối.
 Client không thể truy cập hệ thống.
+
 Trường hợp 3: Sai quyền ACL
+
 Điều kiện:
 Người dùng không có quyền Publish hoặc Subscribe Topic.
 Kết quả mong đợi:
 Broker từ chối thao tác không đúng quyền.
 Dữ liệu MQTT được bảo vệ theo chính sách ACL.
+
 ## 8. Lưu ý bảo mật
 
 Không đưa file chứa mật khẩu thật (password.txt) lên GitHub.
