@@ -6,7 +6,7 @@ PORT = 1883
 TOPIC = "iot/sensor/temp"
 
 USERNAME = "dashboard"
-PASSWORD = "MAT_KHAU_THU_NGHIEM"
+PASSWORD = "1234"
 
 LOG_FILE = "../results/logs/mqtt_log.txt"
 
