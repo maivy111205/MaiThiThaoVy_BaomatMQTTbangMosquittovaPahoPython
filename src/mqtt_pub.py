@@ -7,7 +7,7 @@ PORT = 1883
 TOPIC = "iot/sensor/temp"
 
 USERNAME = "sensor"
-PASSWORD = "1234"
+PASSWORD = "YOUR_PASSWORD"
 
 client = mqtt.Client()
 client.username_pw_set(USERNAME, PASSWORD)
