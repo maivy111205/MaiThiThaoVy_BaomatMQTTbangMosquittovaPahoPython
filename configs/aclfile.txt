@@ -1,4 +1,4 @@
-user dashboard
-topic readwrite iot/sensor/#
 user sensor
-topic readwrite iot/sensor/#
+topic write iot/sensor/temp
+user dashboard
+topic read iot/sensor/temp
