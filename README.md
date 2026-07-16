@@ -46,10 +46,9 @@ Phân quyền truy cập bằng ACL (Access Control List).
 
 Quyền truy cập:
 
-| User      | Topic           | Quyền |
-| sensor    | iot/sensor/temp | Publish |
-| dashboard | iot/sensor/temp | Subscribe |
-
+ User: sensor, dashboard
+ Topic: iot/sensor/temp 
+ Quyền: Publish, Subscribe 
 
 ## 4. Cấu trúc thư mục
 
