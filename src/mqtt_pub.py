@@ -2,17 +2,18 @@ import json
 from datetime import datetime
 import paho.mqtt.client as mqtt
 
-BROKER = "localhost"
-PORT = 1883
-TOPIC = "iot/sensor/temp"
+BROKER = "localhost"      
+PORT = 1883               
+TOPIC = "iot/sensor/temp" 
 
-USERNAME = "sensor"
-PASSWORD = "1234"
+USERNAME = "sensor"       
+PASSWORD = "1234"         
 
 client = mqtt.Client()
 client.username_pw_set(USERNAME, PASSWORD)
 
 try:
+
     client.connect(BROKER, PORT, 60)
 
     payload = {

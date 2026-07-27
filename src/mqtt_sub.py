@@ -31,8 +31,8 @@ def on_message(client, userdata, msg):
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(f"{msg.topic} : {message}\n")
 
-client = mqtt.Client()
 
+client = mqtt.Client()
 client.username_pw_set(USERNAME, PASSWORD)
 
 client.on_connect = on_connect
