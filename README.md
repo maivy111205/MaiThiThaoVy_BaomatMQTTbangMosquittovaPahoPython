@@ -20,7 +20,6 @@ MaiThiThaoVy_BaomatMQTTbangMosquittovaPahoPython/
 │
 ├── README.md               # Hướng dẫn cài đặt, cấu trúc và cách sử dụng hệ thống
 ├── report/                 # Thư mục chứa báo cáo tiểu luận (.docx và .pdf)
-├── slides/                 # Thư mục chứa file slide thuyết trình bảo vệ đề tài
 ├── src/                    # Thư mục mã nguồn Python
 │   ├── mqtt_pub.py         # Script Publisher giả lập cảm biến phát gói tin JSON
 │   └── mqtt_sub.py         # Script Subscriber lắng nghe thông điệp và tự động ghi log
@@ -35,32 +34,49 @@ MaiThiThaoVy_BaomatMQTTbangMosquittovaPahoPython/
     └── screenshots/        # Thư mục chứa ảnh chụp màn hình kiểm thử kịch bản TC-01 đến TC-06
 ```
 ---
-## 3. Hướng dẫn Cài đặt và Triển khai Hệ thống
+## 3. Hướng dẫn cài đặt và triển khai Hệ thống
 
 Bước 1: Cài đặt và cấu hình Mosquitto Broker
+
 Cài đặt Eclipse Mosquitto trên hệ điều hành Windows.
+
 Cấu hình tệp mosquitto.conf (đặt tại thư mục cài đặt Mosquitto hoặc sử dụng từ thư mục configs/):
+
       listener 1883
+      
       allow_anonymous false
+      
       password_file "C:\Program Files\Mosquitto\password.txt"
+      
       acl_file "C:\Program Files\Mosquitto\aclfile.txt"
+      
 Khởi động Mosquitto Broker kèm tệp cấu hình ở chế độ dòng lệnh:
+
       cd "C:\Program Files\Mosquitto"
+      
       mosquitto -c mosquitto.conf -v
+      
 Bước 2: Cài đặt thư viện Python
+
 Đảm bảo máy tính đã cài đặt Python, sau đó cài đặt thư viện Paho MQTT chính thức:
+
     pip install paho-mqtt
+    
 Bước 3: Chạy chương trình kiểm thử
+
 Khởi chạy Subscriber (Lắng nghe dữ liệu và ghi log):
+
     python src/mqtt_sub.py
     
 ---
-## 4. Kết quả và Minh chứng Kiểm thử
+## 4. Kết quả và minh chứng Kiểm thử
 
 Hệ thống đã vượt qua thành công toàn bộ các kịch bản kiểm thử bảo mật (TC-01 đến TC-06):
 
-Xác thực hợp lệ/không hợp lệ: Chặn tuyệt đối các kết nối ẩn danh hoặc sai thông tin đăng nhập.
-Phân quyền ACL: Ngăn chặn các hành vi cố tình Publish hoặc Subscribe trái phép trên kênh định danh iot/sensor/temp.
-Ghi log tự động: Lưu trữ toàn bộ thông điệp dữ liệu cảm biến định dạng JSON vào tệp nhật ký results/logs/mqtt_log.txt.
++ Xác thực hợp lệ/không hợp lệ: Chặn tuyệt đối các kết nối ẩn danh hoặc sai thông tin đăng nhập.
+  
++ Phân quyền ACL: Ngăn chặn các hành vi cố tình Publish hoặc Subscribe trái phép trên kênh định danh iot/sensor/temp.
+  
++ Ghi log tự động: Lưu trữ toàn bộ thông điệp dữ liệu cảm biến định dạng JSON vào tệp nhật ký results/logs/mqtt_log.txt.
 
 ---
