@@ -34,6 +34,7 @@ MaiThiThaoVy_BaomatMQTTbangMosquittovaPahoPython/
     ├── logs/               # Tệp nhật ký hoạt động (mqtt_log.txt)
     └── screenshots/        # Thư mục chứa ảnh chụp màn hình kiểm thử kịch bản TC-01 đến TC-06
 ```
+---
 ## 3. Hướng dẫn Cài đặt và Triển khai Hệ thống
 
 Bước 1: Cài đặt và cấu hình Mosquitto Broker
@@ -53,6 +54,7 @@ Bước 3: Chạy chương trình kiểm thử
 Khởi chạy Subscriber (Lắng nghe dữ liệu và ghi log):
     python src/mqtt_sub.py
     
+---
 ## 4. Kết quả và Minh chứng Kiểm thử
 
 Hệ thống đã vượt qua thành công toàn bộ các kịch bản kiểm thử bảo mật (TC-01 đến TC-06):
@@ -60,3 +62,5 @@ Hệ thống đã vượt qua thành công toàn bộ các kịch bản kiểm t
 Xác thực hợp lệ/không hợp lệ: Chặn tuyệt đối các kết nối ẩn danh hoặc sai thông tin đăng nhập.
 Phân quyền ACL: Ngăn chặn các hành vi cố tình Publish hoặc Subscribe trái phép trên kênh định danh iot/sensor/temp.
 Ghi log tự động: Lưu trữ toàn bộ thông điệp dữ liệu cảm biến định dạng JSON vào tệp nhật ký results/logs/mqtt_log.txt.
+
+---
