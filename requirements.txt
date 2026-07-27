@@ -1,1 +1,4 @@
-paho-mqtt
+# Danh sách các thư viện Python cần thiết cho đề tài
+# Đề tài: Bảo mật MQTT bằng Mosquitto và Paho Python
+
+paho-mqtt>=1.6.1,<3.0.0
