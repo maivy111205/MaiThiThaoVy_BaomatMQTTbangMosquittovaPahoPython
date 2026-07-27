@@ -33,7 +33,7 @@ MaiThiThaoVy_BaomatMQTTbangMosquittovaPahoPython/
 └── results/                # Thư mục kết quả thực nghiệm và minh chứng
     ├── logs/               # Tệp nhật ký hoạt động (mqtt_log.txt)
     └── screenshots/        # Thư mục chứa ảnh chụp màn hình kiểm thử kịch bản TC-01 đến TC-06
-
+```
 ## 3. Hướng dẫn Cài đặt và Triển khai Hệ thống
 
 Bước 1: Cài đặt và cấu hình Mosquitto Broker
@@ -52,6 +52,7 @@ Bước 2: Cài đặt thư viện Python
 Bước 3: Chạy chương trình kiểm thử
 Khởi chạy Subscriber (Lắng nghe dữ liệu và ghi log):
     python src/mqtt_sub.py
+    
 ## 4. Kết quả và Minh chứng Kiểm thử
 
 Hệ thống đã vượt qua thành công toàn bộ các kịch bản kiểm thử bảo mật (TC-01 đến TC-06):
