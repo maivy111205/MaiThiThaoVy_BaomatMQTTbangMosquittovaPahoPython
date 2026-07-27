@@ -1,2 +1,4 @@
 iot/sensor/temp : 30
 iot/sensor/temp : 30
+iot/sensor/temp : {"device": "sensor01", "temperature": 30, "humidity": 70, "time": "2026-07-23 12:49:41"}
+iot/sensor/temp : {"device": "sensor01", "temperature": 30, "humidity": 70, "time": "2026-07-23 23:03:36"}
