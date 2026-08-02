@@ -1,5 +1,4 @@
-# Bảo mật MQTT bằng Mosquitto và Paho Python 
-# (Đề tài 12 - Hướng B)
+# Bảo mật MQTT bằng Mosquitto và Paho Python (Đề tài 12 - Hướng B)
 
 * **Học phần:** Bảo mật IoT (INT4410)
 * **Sinh viên thực hiện:** Mai Thị Thảo Vy
