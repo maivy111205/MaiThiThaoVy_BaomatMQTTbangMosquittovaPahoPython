@@ -23,14 +23,14 @@ MaiThiThaoVy_BaomatMQTTbangMosquittovaPahoPython/
 ├── src/                    # Thư mục mã nguồn Python
 │   ├── mqtt_pub.py         # Script Publisher giả lập cảm biến phát gói tin JSON
 │   └── mqtt_sub.py         # Script Subscriber lắng nghe thông điệp và tự động ghi log
-├── configs/                # Thư mục chứa các tệp cấu hình bảo mật hệ thống
-│   ├── mosquitto.conf      # Tệp cấu hình chính của Mosquitto Broker
-│   ├── aclfile.txt         # Tệp danh sách điều khiển truy cập (ACL)
-│   └── password.txt.example# Mẫu định dạng tệp mật khẩu tài khoản đã mã hóa hash
+├── configs/                # Thư mục chứa các tập tin cấu hình bảo mật hệ thống
+│   ├── mosquitto.conf      # Tập tin cấu hình chính của Mosquitto Broker
+│   ├── aclfile.txt         # Tập tin danh sách điều khiển truy cập (ACL)
+│   └── password.txt.example# Mẫu định dạng tập tin mật khẩu tài khoản đã mã hóa hash
 ├── data/                   # Thư mục dữ liệu mẫu
-│   └── payload_sample.json # Tệp cấu trúc JSON mẫu truyền nhận dữ liệu cảm biến
+│   └── payload_sample.json # Tập tin cấu trúc JSON mẫu truyền nhận dữ liệu cảm biến
 └── results/                # Thư mục kết quả thực nghiệm và minh chứng
-    ├── logs/               # Tệp nhật ký hoạt động (mqtt_log.txt)
+    ├── logs/               # Tập tin nhật ký hoạt động (mqtt_log.txt)
     └── screenshots/        # Thư mục chứa ảnh chụp màn hình kiểm thử kịch bản TC-01 đến TC-06
 ```
 ---
@@ -40,7 +40,7 @@ Bước 1: Cài đặt và cấu hình Mosquitto Broker
 
 Cài đặt Eclipse Mosquitto trên hệ điều hành Windows.
 
-Cấu hình tệp mosquitto.conf (đặt tại thư mục cài đặt Mosquitto hoặc sử dụng từ thư mục configs/):
+Cấu hình tập tin mosquitto.conf (đặt tại thư mục cài đặt Mosquitto hoặc sử dụng từ thư mục configs/):
 
       listener 1883
       
@@ -50,7 +50,7 @@ Cấu hình tệp mosquitto.conf (đặt tại thư mục cài đặt Mosquitto 
       
       acl_file "C:\Program Files\Mosquitto\aclfile.txt"
       
-Khởi động Mosquitto Broker kèm tệp cấu hình ở chế độ dòng lệnh:
+Khởi động Mosquitto Broker kèm tập tin cấu hình ở chế độ dòng lệnh:
 
       cd "C:\Program Files\Mosquitto"
       
@@ -77,6 +77,6 @@ Hệ thống đã vượt qua thành công toàn bộ các kịch bản kiểm t
   
 + Phân quyền ACL: Ngăn chặn các hành vi cố tình Publish hoặc Subscribe trái phép trên kênh định danh iot/sensor/temp.
   
-+ Ghi log tự động: Lưu trữ toàn bộ thông điệp dữ liệu cảm biến định dạng JSON vào tệp nhật ký results/logs/mqtt_log.txt.
++ Ghi log tự động: Lưu trữ toàn bộ thông điệp dữ liệu cảm biến định dạng JSON vào tập tin nhật ký results/logs/mqtt_log.txt.
 
 ---
